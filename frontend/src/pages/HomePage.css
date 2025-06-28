@@ -1,0 +1,117 @@
+/* src/pages/HomePage.css */
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f0f4f8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+
+.homepage-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.homepage-description {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.homepage-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.create-room-btn,
+.join-room-btn {
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+  width: 100%;
+  max-width: 250px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.create-room-btn:hover,
+.join-room-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.join-room-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+.access-code-input {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.access-code-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.join-room-btn {
+  background-color: #28a745;
+}
+
+.join-room-btn:hover {
+  background-color: #218838;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.login-reminder {
+  color: #ff6347;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .homepage-title {
+    font-size: 1.8rem;
+  }
+
+  .homepage-description {
+    font-size: 1rem;
+  }
+
+  .create-room-btn,
+  .join-room-btn {
+    font-size: 0.9rem;
+  }
+
+  .access-code-input {
+    font-size: 0.9rem;
+  }
+}

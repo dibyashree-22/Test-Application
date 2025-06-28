@@ -1,0 +1,47 @@
+/* TestPage.css */
+.test-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .test-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+  }
+  
+  .test-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .test-welcome {
+    font-size: 18px;
+    color: #4caf50;
+  }
+  
+  .test-info {
+    font-size: 16px;
+    color: #333;
+  }
+  .test-page-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .test-page-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  

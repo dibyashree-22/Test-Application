@@ -1,0 +1,70 @@
+.app-header {
+  background-color: #282c34;
+  padding: 1rem;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #61dafb;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem; /* Increased gap for better spacing */
+  align-items: center; /* Align items in the center */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #61dafb;
+}
+
+.user-name {
+  color: #fff;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.logout-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold; /* Ensures text stands out */
+}
+
+.logout-btn:hover {
+  background-color: #d32f2f;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack navbar elements on smaller screens */
+    align-items: flex-start; /* Align items to the left on small screens */
+  }
+
+  .nav-links {
+    flex-direction: column; /* Stack links vertically */
+    gap: 1rem; /* Space between each link */
+  }
+
+  .logo a {
+    font-size: 1.25rem; /* Slightly smaller logo on mobile */
+  }
+}
